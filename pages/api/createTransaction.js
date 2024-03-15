@@ -6,7 +6,7 @@ import BigNumber from "bignumber.js";
 import products from "./products.json";
 
 //const usdcAddress = new PublicKey("Gh9ZwEmdLJ8DscKNTkTqPbNwLNNBjuSzaG9Vp2KGtKJr"); //Endereço do Contrato USDC DevNET
-const usdcAddress = new PublicKey("Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"); //Endereço do Contrato USDC Main NET
+const usdcAddress = new PublicKey("EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"); //Endereço do Contrato USDC Main NET
 
 //const sellerAddress = "B1aLAAe4vW8nSQCetXnYqJfRxzTjnbooczwkUJAr7yMS";
 const sellerAddress = "8MAqyWFps17iyMyqe1XzrWtaC4xZdH9A7c8hn1Rv8PMu";  //Minha
