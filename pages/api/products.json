@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "starpower plug",
+    "price": "1",
+    "description": "starpower plug",
+    "image_url": "https://i.imgur.com/SiuyNdp.jpeg",
+    "filename": "starpowerplug.txt",
+    "hash": "QmccfegggAfbycWibhXWDUmP9xUFaVPbvRWSBiYNefLze5111"
+  },
+  {
+    "id": 2,
+    "name": "starpower plug2",
+    "price": "0.1",
+    "image_url": "https://i.imgur.com/SiuyNdp.jpeg",
+    "description": "starpower plug",
+    "filename": "starpowerplug.txt",
+    "hash": "QmWN5TVeeBR97osFAv7S4zep5yvkFn2gouQ6hot3WZpgoP111"
+  }
+]
