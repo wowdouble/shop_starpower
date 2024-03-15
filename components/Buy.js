@@ -46,12 +46,12 @@ export default function Buy({ itemID }) {
     const txData = await txResponse.json();
     
     const tx = Transaction.from(Buffer.from(txData.transaction, 'base64'));
-    console.log('Os dados da Tx são', tx);
+    console.log('开始交易', tx);
 
     try {
       const txHash = await sendTransaction(tx, connection);
       console.log(
-        `Transação enviada: https://solscan.io/tx/${txHash}?cluster=mainnet`
+        `hash: https://solscan.io/tx/${txHash}?cluster=mainnet`
       );
       setStatus(STATUS.Submitted);
     } catch (error) {
@@ -91,13 +91,13 @@ export default function Buy({ itemID }) {
             setStatus(STATUS.Paid);
             setLoading(false);
             addOrder(order);
-            alert('Obrigado por sua compra!');
+            alert('pay success !');
           }
         } catch (e) {
           if (e instanceof FindReferenceError) {
             return null;
           }
-          console.error('Erro desconhecido', e);
+          console.error('pay error', e);
         } finally {
           setLoading(false);
         }
