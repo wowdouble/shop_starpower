@@ -131,15 +131,10 @@ export default function Buy({ itemID }) {
   }
 
   return (
-    <div>
-      {/* Exibir ou o botão de compra ou o componente IPFSDownload com base na existência de Hash */}
-      {item ? (
-        <IPFSDownload hash={item.hash} filename={item.filename} />
-      ) : (
+      <div>
         <button disabled={loading} className="buy-button" onClick={processTransaction}>
-          Comprar 🛒
+          Comprar
         </button>
-      )}
-    </div>
+      </div>
   );
 }

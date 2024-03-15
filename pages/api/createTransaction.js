@@ -6,7 +6,7 @@ import BigNumber from "bignumber.js";
 import products from "./products.json";
 
 //const usdcAddress = new PublicKey("Gh9ZwEmdLJ8DscKNTkTqPbNwLNNBjuSzaG9Vp2KGtKJr"); //Endereço do Contrato USDC DevNET
-const usdcAddress = new PublicKey("EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"); //Endereço do Contrato USDC Main NET
+const usdcAddress = new PublicKey("TpwtDCrfuGNPRSMXH4cvhYnVnx5YREtG2SQVB3R4kj1"); //Endereço do Contrato USDC Main NET
 
 //const sellerAddress = "B1aLAAe4vW8nSQCetXnYqJfRxzTjnbooczwkUJAr7yMS";
 const sellerAddress = "8MAqyWFps17iyMyqe1XzrWtaC4xZdH9A7c8hn1Rv8PMu";  //Minha
@@ -40,10 +40,9 @@ const createTransaction = async (req, res) => {
     const buyerPublicKey = new PublicKey(buyer);
 
     //const network = WalletAdapterNetwork.Devnet; //DEV NET
-    //const network = WalletAdapterNetwork.Mainnet;
-        
-    //const endpoint = clusterApiUrl(network);
-    const endpoint = 'https://solana-mainnet.api.syndica.io/api-token/2XgTD2j17cMPjgVr3RsYg7M3ZctJuh6HQCMtq6LxwVd1BQ2UZ2mCd79QhuYtYXha6ZkcFMJtddcTd6wgnsHZWnasVGDrofALtYCYeB5qngqfkovJALvsQ5URnz1C2kJhENeRwi41K5jkKEip4WrwCQdtHUvJepQU1NeZAk8SXB2eqgxGXJkVppWDQQsirz61iN31BJPqLUBDX8GGxT8HR5kbhYpibMH2uaCRJkakjduG9zjLFqYcPdCquBEutRCnJwdAM4rZy8MWTivrChNcEkSvNWAAigr5ncAfvj8qurvjPxm5rncjhD6ic4xofz6HXcJMan5oGV8EPrK9PpF8aimnNo1QK74iwc5ZXQfXNCNy742RvjJZx8hshnY5ospWHiprMscDWy9BzwFo8UqWJg4ruZUq2Xp9oae1T5iTyM5Y14PpzKsUHxtve3hHkJeL1mRP93DFY5eQKSpJkrDowxAmGgo7n3dJuXVYoRvxMjQGUGk1yUDWxTtdsdKiy'
+    const network = WalletAdapterNetwork.Mainnet;
+    const endpoint = clusterApiUrl(network);
+    //const endpoint = 'https://solana-mainnet.api.syndica.io/api-token/2XgTD2j17cMPjgVr3RsYg7M3ZctJuh6HQCMtq6LxwVd1BQ2UZ2mCd79QhuYtYXha6ZkcFMJtddcTd6wgnsHZWnasVGDrofALtYCYeB5qngqfkovJALvsQ5URnz1C2kJhENeRwi41K5jkKEip4WrwCQdtHUvJepQU1NeZAk8SXB2eqgxGXJkVppWDQQsirz61iN31BJPqLUBDX8GGxT8HR5kbhYpibMH2uaCRJkakjduG9zjLFqYcPdCquBEutRCnJwdAM4rZy8MWTivrChNcEkSvNWAAigr5ncAfvj8qurvjPxm5rncjhD6ic4xofz6HXcJMan5oGV8EPrK9PpF8aimnNo1QK74iwc5ZXQfXNCNy742RvjJZx8hshnY5ospWHiprMscDWy9BzwFo8UqWJg4ruZUq2Xp9oae1T5iTyM5Y14PpzKsUHxtve3hHkJeL1mRP93DFY5eQKSpJkrDowxAmGgo7n3dJuXVYoRvxMjQGUGk1yUDWxTtdsdKiy'
     const connection = new Connection(endpoint);
 
     const buyerUsdcAddress = await getAssociatedTokenAddress(usdcAddress, buyerPublicKey);
