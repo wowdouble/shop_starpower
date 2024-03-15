@@ -9,7 +9,7 @@ import products from "./products.json";
 const usdcAddress = new PublicKey("Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"); //Endereço do Contrato USDC Main NET
 
 //const sellerAddress = "B1aLAAe4vW8nSQCetXnYqJfRxzTjnbooczwkUJAr7yMS";
-const sellerAddress = "TpwtDCrfuGNPRSMXH4cvhYnVnx5YREtG2SQVB3R4kj1";  //Minha
+const sellerAddress = "8MAqyWFps17iyMyqe1XzrWtaC4xZdH9A7c8hn1Rv8PMu";  //Minha
 
 const sellerPublicKey = new PublicKey(sellerAddress);
 

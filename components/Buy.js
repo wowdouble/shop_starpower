@@ -48,11 +48,9 @@ export default function Buy({ itemID }) {
     const tx = Transaction.from(Buffer.from(txData.transaction, 'base64'));
     console.log('Os dados da Tx são', tx);
 
-    // Tentar enviar a transação para a rede
     try {
       const txHash = await sendTransaction(tx, connection);
       console.log(
-        //`Transação enviada: https://solscan.io/tx/${txHash}?cluster=devnet`
         `Transação enviada: https://solscan.io/tx/${txHash}?cluster=mainnet`
       );
       setStatus(STATUS.Submitted);
@@ -64,9 +62,6 @@ export default function Buy({ itemID }) {
   };
 
   useEffect(() => {
-    // Verificar se este endereço já comprou este item
-    // Se for o caso, buscar o item e ajustar o pagamento para verdadeiro
-    // Função Async para evitar o bloqueio da IU
     async function checkPurchased() {
       const purchased = await hasPurchased(publicKey, itemID);
       if (purchased) {
