@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "name": "starpower plug",
+    "name": "starpowerplug",
     "price": "1",
-    "description": "starpower plug",
+    "description": "starpowerplug",
     "image_url": "https://i.imgur.com/SiuyNdp.jpeg",
     "filename": "starpowerplug.txt",
     "hash": "QmccfegggAfbycWibhXWDUmP9xUFaVPbvRWSBiYNefLze5"
   },
   {
     "id": 2,
-    "name": "starpower plug2",
+    "name": "starpowerplug2",
     "price": "0.1",
     "image_url": "https://i.imgur.com/SiuyNdp.jpeg",
-    "description": "starpower plug",
+    "description": "starpowerplug",
     "filename": "starpowerplug.txt",
     "hash": "QmWN5TVeeBR97osFAv7S4zep5yvkFn2gouQ6hot3WZpgoP"
   }
